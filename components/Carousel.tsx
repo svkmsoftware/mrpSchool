@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 export default function HeroCarousel() {
   const slides = [
     {
-      image: "/images/carousel/slider_1.jpg",
+      image: "/images/carousel/slider_1.jpeg",
       title: "Nurturing Tomorrow's Leaders Today",
       subtitle:
         "Experience a world-class education focused on academic excellence and character building.",
@@ -19,7 +19,7 @@ export default function HeroCarousel() {
       link: "/infrastructure",
     },
     {
-      image: "/images/carousel/slider_2.jpg",
+      image: "/images/carousel/slider_2.jpeg",
       title: "Empowering Innovation & Creativity",
       subtitle:
         "Our state-of-the-art STEM labs and arts programs encourage students to think beyond boundaries.",
@@ -27,7 +27,7 @@ export default function HeroCarousel() {
       link: "/academics",
     },
     {
-      image: "/images/carousel/slider_3.jpg",
+      image: "/images/carousel/slider_3.jpeg",
       title: "A Legacy of Sporting Excellence",
       subtitle:
         "Fostering teamwork and resilience through our Olympic-sized facilities and professional coaching.",

@@ -15,7 +15,7 @@ export default function Infrastructure() {
       title: "Smart Classrooms",
       desc: "Interactive digital boards and ergonomic seating for modern learning.",
       icon: <Monitor size={20} />,
-      image: "/images/carousel/slider_1.jpg",
+      image: "/images/carousel/slider_1.jpeg",
       // Spans 2 cols, 1 row (Top Left)
       gridClass: "md:col-span-2 md:row-span-1",
     },
@@ -31,7 +31,7 @@ export default function Infrastructure() {
       title: "Sports & Swimming",
       desc: "Olympic-sized pool and multi-sport turf.",
       icon: <Trophy size={20} />,
-      image: "/images/infrastructure/swimmingpool_sports.jpg",
+      image: "/images/infrastructure/swimmingpool_sports.jpeg",
       // Spans 1 col, 1 row (Bottom Left)
       gridClass: "md:col-span-1 md:row-span-1",
     },
@@ -39,7 +39,7 @@ export default function Infrastructure() {
       title: "Central Library",
       desc: "A vast collection of 15,000+ books and digital resources.",
       icon: <BookText size={20} />,
-      image: "/images/infrastructure/library.jpg",
+      image: "/images/infrastructure/library.jpeg",
       // Spans 1 col, 1 row (Bottom Middle)
       gridClass: "md:col-span-1 md:row-span-1",
     },
