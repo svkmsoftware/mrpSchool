@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Column 1: Brand & Affiliation */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <img src="/images/school_logo.png" className="h-16 w-auto mb-4" />
+              <img src="/images/mrpSchool_logo.png" className="h-16 w-auto mb-4" />
               <div className="font-black text-2xl text-slate-900 uppercase leading-none">
                 Mukesh R Patel <br />
                 <span className="text-primary text-sm">

@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
           <Link href="/" className="flex flex-col items-center group">
             <img
-              src="/images/school_logo.png"
+              src="/images/mrpSchool_logo.png"
               alt="Logo"
               className="h-16 md:h-24 w-auto mb-2 transition-transform duration-500 group-hover:scale-105"
             />
