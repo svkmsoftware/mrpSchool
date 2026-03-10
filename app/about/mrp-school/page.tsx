@@ -157,7 +157,7 @@ export default function AboutMRPSchool() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
               <img
-                src="/images/carousel/slider_1.jpg"
+                src="/images/mrpSchool_classroom_photo.jpeg"
                 alt="MRPS Campus"
                 className="w-full h-full object-cover"
               />
@@ -304,7 +304,7 @@ export default function AboutMRPSchool() {
       </div>
 
       {/* 5. VISION & MISSION (Full Unedited Text) */}
-      <div className="bg-slate-900 py-24">
+      <div className="bg-slate-900 py-24" id="visionMission">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-12 bg-white/5 rounded-[3rem] border border-white/10 group hover:border-primary/50 transition-all">

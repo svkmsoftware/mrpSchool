@@ -4,7 +4,7 @@ export const navigation = [
     items: [
       { name: "About SVKM", href: "/about/svkm" },
       { name: "About MRP School", href: "/about/mrp-school" },
-      { name: "Vision & Mission", href: "/about/vision-mission" },
+      { name: "Vision & Mission", href: "/about/mrp-school#visionMission" },
       { name: "Campus", href: "/about/campus" },
       { name: "Staff", href: "/about/staff" },
       { name: "Alumni", href: "/about/alumni" },

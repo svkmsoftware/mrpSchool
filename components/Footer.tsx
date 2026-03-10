@@ -19,7 +19,10 @@ export default function Footer() {
           {/* Column 1: Brand & Affiliation */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <img src="/images/mrpSchool_logo.png" className="h-16 w-auto mb-4" />
+              <img
+                src="/images/mrpSchool_logo.png"
+                className="h-16 w-auto mb-4"
+              />
               <div className="font-black text-2xl text-slate-900 uppercase leading-none">
                 Mukesh R Patel <br />
                 <span className="text-primary text-sm">
@@ -96,7 +99,11 @@ export default function Footer() {
               <li className="flex gap-3 items-start italic">
                 <MapPin className="text-primary shrink-0" size={18} />
                 <span>
-                  123, School Road, Patel Nagar, <br />
+                  Mukesh R. Patel School,
+                  <br /> Near Nimzari Naka, <br />
+                  Shirpur, Dist. Dhule, <br />
+                  Maharashtra - 425405
+                  <br />
                   Mumbai, Maharashtra - 400001
                 </span>
               </li>
