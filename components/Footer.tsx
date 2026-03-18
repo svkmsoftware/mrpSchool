@@ -103,8 +103,6 @@ export default function Footer() {
                   <br /> Near Nimzari Naka, <br />
                   Shirpur, Dist. Dhule, <br />
                   Maharashtra - 425405
-                  <br />
-                  Mumbai, Maharashtra - 400001
                 </span>
               </li>
               <li className="flex gap-3 items-center">
@@ -141,7 +139,7 @@ export default function Footer() {
         {/* BOTTOM BAR */}
         <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            © 2024 Mukesh R Patel School. All rights reserved.
+            © 2026 Mukesh R Patel School. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link
