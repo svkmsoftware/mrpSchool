@@ -107,11 +107,11 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 items-center">
                 <Phone className="text-primary shrink-0" size={18} />
-                <span>+91 12345 67890</span>
+                <a href="tel:+91 88063 63306">+91 88063 63306</a>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="text-primary shrink-0" size={18} />
-                <span>info@mrpschool.ac.in</span>
+                <a href="mailto:mrpslearning@gmail.com">mrpslearning@gmail.com</a>
               </li>
             </ul>
           </div>

@@ -58,7 +58,7 @@ export default function ContactUs() {
                       Call Us
                     </p>
                     <p className="text-sm font-bold text-slate-700">
-                      +91-0000000000
+                      <a href="tel:+91 88063 63306">+91 88063 63306</a>
                     </p>
                   </div>
                 </div>
@@ -69,7 +69,9 @@ export default function ContactUs() {
                       Email
                     </p>
                     <p className="text-sm font-bold text-slate-700">
-                      info@mrpsshirpur.edu.in
+                      <a href="mailto:mrpslearning@gmail.com">
+                        mrpslearning@gmail.com
+                      </a>
                     </p>
                   </div>
                 </div>
