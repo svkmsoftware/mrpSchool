@@ -99,10 +99,10 @@ export default function Footer() {
               <li className="flex gap-3 items-start italic">
                 <MapPin className="text-primary shrink-0" size={18} />
                 <span>
-                  Mukesh R. Patel School,
-                  <br /> Near Nimzari Naka, <br />
-                  Shirpur, Dist. Dhule, <br />
-                  Maharashtra - 425405
+                  Mukesh R. Patel School, <br />
+                  Ankleshwar-Burhanpur Highway, <br />
+                  Shirpur-Chopda Road, Shirpur, <br />
+                  Dist. Dhule - 425405
                 </span>
               </li>
               <li className="flex gap-3 items-center">
@@ -111,7 +111,9 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="text-primary shrink-0" size={18} />
-                <a href="mailto:mrpslearning@gmail.com">mrpslearning@gmail.com</a>
+                <a href="mailto:mrpslearning@gmail.com">
+                  mrpslearning@gmail.com
+                </a>
               </li>
             </ul>
           </div>

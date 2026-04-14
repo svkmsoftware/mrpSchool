@@ -19,7 +19,10 @@ export const navigation = [
       { name: "E-Brochure", href: "/admissions/e-brochure" },
       { name: "Fee Structure", href: "/admissions/fees" },
       { name: "Registration", href: "/admissions/registration" },
-      { name: "Admission Form", href: "/admissions/form" },
+      {
+        name: "Admission Form",
+        href: "https://sdcappscs.svkm.ac.in:44300/irj/portal ",
+      },
     ],
   },
   {
@@ -34,8 +37,14 @@ export const navigation = [
   {
     title: "Career Counselling",
     items: [
-      { name: "Career Guidance Activities", href: "/career-counselling/activities" },
-      { name: "Career Guidance Calendar", href: "/career-counselling/calendar" },
+      {
+        name: "Career Guidance Activities",
+        href: "/career-counselling/activities",
+      },
+      {
+        name: "Career Guidance Calendar",
+        href: "/career-counselling/calendar",
+      },
       { name: "Counselling Sessions", href: "/career-counselling/sessions" },
     ],
   },
@@ -74,7 +83,10 @@ export const navigation = [
       { name: "Academic Calendar", href: "/academic-calendar" },
       { name: "Newsletter", href: "/newsletter" },
       { name: "Brochure", href: "/brochure" },
-      { name: "School Magazine", href: "/magazine" },
+      {
+        name: "School Magazine",
+        href: "/docs/school_magazine/e_magazine_2025.pdf",
+      },
       { name: "Photo Gallery", href: "/gallery" },
       { name: "Print Media", href: "/print-media" },
       { name: "Video Gallery", href: "/video-gallery" },

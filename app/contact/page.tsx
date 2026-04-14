@@ -43,8 +43,10 @@ export default function ContactUs() {
                     Location
                   </p>
                   <p className="text-slate-700 font-bold leading-relaxed">
-                    Mukesh R. Patel School, Near Nimzari Naka, <br />
-                    Shirpur, Dist. Dhule, Maharashtra - 425405
+                    Mukesh R. Patel School, <br />
+                    Ankleshwar-Burhanpur Highway, <br />
+                    Shirpur-Chopda Road, Shirpur, Dist. <br />
+                    Dhule - 425405
                   </p>
                 </div>
               </div>
@@ -85,7 +87,7 @@ export default function ContactUs() {
                     Office Hours
                   </p>
                   <p className="text-sm font-bold uppercase tracking-tight">
-                    Mon — Sat: 9:00 AM to 5:00 PM
+                    Mon — Sat: 8:00 AM to 4:00 PM
                   </p>
                 </div>
               </div>

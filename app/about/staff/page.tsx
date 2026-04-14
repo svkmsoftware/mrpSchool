@@ -1,171 +1,151 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  GraduationCap,
-  HeartHandshake,
-  Mail,
-  Award,
-  Search,
-} from "lucide-react";
+import { GraduationCap, Mail, Award, Search, Users } from "lucide-react";
 
 export default function StaffPage() {
   const [filter, setFilter] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const staffMembers = [
-    {
-      name: "Mr. Vaibhav Andrews",
-      role: "Chief Warden",
-      department: "Residential",
-      qualification: "M.A., Residential Life Mgmt",
-      experience: "15+ Years",
-      specialty: "Student Welfare & Pastoral Care",
-    },
-    {
-      name: "Miss Kalyani M. Pawar",
-      role: "School Psychologist",
-      department: "Support",
-      qualification: "M.Sc. Psychology, Play Therapy Cert.",
-      experience: "8+ Years",
-      specialty: "Child Development & Mental Health",
-    },
-    {
-      name: "Senior Academic Lead",
-      role: "Head of Science",
-      department: "Academic",
-      qualification: "Ph.D., M.Sc. Physics",
-      experience: "12+ Years",
-      specialty: "STEM Innovation",
-    },
-    // Add more staff members here
+    // ACADEMIC
+    { name: "Manju Singh", role: "Principal", department: "Academic", qualification: "M.A. (English), B.Ed.", experience: "23 Years" },
+    { name: "Aniket Sapkal", role: "TGT", department: "Academic", qualification: "B.Sc., M.Ed.", experience: "20 Years" },
+    { name: "Jyoti Pundalwal", role: "Primary Teacher", department: "Academic", qualification: "M.A. B.Ed.", experience: "27 Years" },
+    { name: "Sushma Poojari", role: "TGT", department: "Academic", qualification: "M.Sc, B.Ed", experience: "14 Years" },
+    { name: "Kavita Das", role: "Primary Teacher", department: "Academic", qualification: "B.Com, M.A. (English) B.Ed", experience: "11 Years" },
+    { name: "Sachin Gaikwad", role: "TGT", department: "Academic", qualification: "B.A. B.Ed", experience: "13 Years" },
+    { name: "Vipinkumar Yadav", role: "PGT", department: "Academic", qualification: "M.Sc , M.Ed", experience: "12 Years" },
+    { name: "Sonal Bhardwaj", role: "Primary Teacher", department: "Academic", qualification: "M.Com, B.Ed.", experience: "10 Years" },
+    { name: "Atul Tare", role: "PGT", department: "Academic", qualification: "M.Sc., B.Ed.", experience: "33 Years" },
+    { name: "Shraddha Kingaonkar", role: "TGT", department: "Academic", qualification: "M.A. B.Ed", experience: "11 Years" },
+    { name: "Sunil Wadekar", role: "TGT", department: "Academic", qualification: "M.A. B.Ed.", experience: "24 Years" },
+    { name: "Kamlesh Kumar Pandey", role: "TGT", department: "Academic", qualification: "M.A. B.Ed.", experience: "19 Years" },
+    { name: "Sylvia Philip", role: "Primary Teacher", department: "Academic", qualification: "B.Com", experience: "7.9 Years" },
+    { name: "Iris Victoria", role: "TGT", department: "Academic", qualification: "M.A. B.com., B.Ed.", experience: "19.8 Years" },
+    { name: "Dependra Singh Chouhan", role: "TGT", department: "Academic", qualification: "B.Tech., B.Ed", experience: "11.9 Years" },
+    { name: "Prafull Gurav", role: "TGT", department: "Academic", qualification: "B.Sc, B.E.d", experience: "8 Years" },
+    { name: "Rajesh Thakare", role: "TGT", department: "Academic", qualification: "M.A., M.Ed.", experience: "8.8 Years" },
+    { name: "Vishnukumar Gautam", role: "TGT", department: "Academic", qualification: "M.A. B.Ed.", experience: "10.5 Years" },
+    { name: "Utpal Pawar", role: "PGT", department: "Academic", qualification: "M.Sc., B.Ed.", experience: "10.4 Years" },
+    
+    // SPORTS & ARTS
+    { name: "Kunal Surve", role: "Head Coach & Sports Co-ordinator", department: "Sports", qualification: "B.A. NIS", experience: "21 Years" },
+    { name: "Dhiraj Patil", role: "Sports Co-ordinator", department: "Sports", qualification: "M.Com, B.P.Ed.", experience: "8 Years" },
+    { name: "Rajesh Kumar", role: "Coach - Volleyball", department: "Sports", qualification: "H.S.C. M.P.Ed", experience: "7 Years" },
+    { name: "Kunal Girase", role: "Coach - Cricket", department: "Sports", qualification: "B.A.", experience: "6.9 Years" },
+    { name: "Karan Patil", role: "Coach - Handball", department: "Sports", qualification: "B.A. M.P.Ed", experience: "7.8 Years" },
+    { name: "Dipak Jagtap", role: "Head Coach - Cricket", department: "Sports", qualification: "B.Com", experience: "11.9 Years" },
+    { name: "Harish Padvi", role: "Coach - Skating", department: "Sports", qualification: "B.A.", experience: "5 Years" },
+    { name: "Udit Chaudhari", role: "Coach - Football", department: "Sports", qualification: "HSC, BPES", experience: "3.8 Years" },
+    { name: "Pooja Kapate", role: "Coach - Football", department: "Sports", qualification: "H.S.C M.P.Ed.", experience: "1 Year" },
+    { name: "Shubham Kadam", role: "Coach - Swimming", department: "Sports", qualification: "H.S.C. M.P.Ed", experience: "1.9 Years" },
+    { name: "Rajendra Singh Girase", role: "Trainer - Horse Riding", department: "Sports", qualification: "SSC, NCC", experience: "28 Years" },
+    { name: "Dharma Sharma", role: "Dance Teacher", department: "Sports", qualification: "F.Y.B.Com", experience: "16 Years" },
+    { name: "Kishor Patil", role: "Art Teacher", department: "Sports", qualification: "B.Sc, B.F.A.", experience: "8 Years" },
+
+    // ADMINISTRATION
+    { name: "Ranjankumar Senapati", role: "Administrative Manager", department: "Admin", qualification: "M.B.A., M.Sc", experience: "21.6 Years" },
+    { name: "Aniket Dandge", role: "Admin Officer", department: "Admin", qualification: "B.A., M.B.A.", experience: "15 Years" },
+    { name: "Mohit Jain", role: "Accountant", department: "Admin", qualification: "M.Com, M.B.A.", experience: "13.5 Years" },
+    { name: "Nimba Patil", role: "Asst. Librarian", department: "Admin", qualification: "M.A. M.Lib.Sci", experience: "17 Years" },
+    { name: "Yatin Thorat", role: "Jr. Clerk", department: "Admin", qualification: "M.Com", experience: "13 Years" },
+
+    // SUPPORT & RESIDENTIAL
+    { name: "Shivani Kadambande", role: "Sr. Lady Warden", department: "Residential", qualification: "B.Com., LLB", experience: "3.5 Years" },
+    { name: "Ravi Ghadge", role: "Warden", department: "Residential", qualification: "B.A. B.P.Ed.", experience: "13.8 Years" },
+    { name: "Ishwar Patil", role: "Warden", department: "Residential", qualification: "B.A.", experience: "8.5 Years" },
+    { name: "Mamta Pawara", role: "Nurse", department: "Residential", qualification: "H.S.C. G.N.M.", experience: "7.5 Years" },
   ];
 
-  const filteredStaff =
-    filter === "All"
-      ? staffMembers
-      : staffMembers.filter((s) => s.department === filter);
+  const filteredStaff = staffMembers.filter((s) => {
+    const matchesFilter = filter === "All" || s.department === filter;
+    const matchesSearch = s.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          s.role.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   return (
     <main className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-6xl font-black uppercase tracking-tighter mb-6">
-            Meet Our <span className="text-primary">Mentors</span>
+          <span className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-4 block">Our Team</span>
+          <h1 className="text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter leading-[0.9] mb-6">
+            Meet Our <br /> <span className="text-primary text-outline">Mentors</span>
           </h1>
-          <p className="max-w-2xl text-slate-400 text-lg">
-            A dedicated team of educators, specialists, and pastoral care
-            experts committed to the holistic growth of every student at Mukesh
-            R. Patel School.
+          <p className="max-w-2xl text-slate-600 text-lg leading-relaxed">
+            A diverse group of 50+ experienced professionals dedicated to academic excellence, 
+            world-class sports training, and nurturing residential care.
           </p>
         </div>
       </section>
 
-      {/* Filter Bar */}
-      {/* Fully Responsive Filter & Search Bar */}
-      <section className="sticky top-0 z-20 bg-white border-b border-slate-100 py-4 md:py-6">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row gap-6 lg:items-center justify-between">
-          {/* Filter Buttons - Horizontal Scroll on Mobile */}
-          <div className="flex overflow-x-auto pb-2 lg:pb-0 gap-2 no-scrollbar -mx-4 px-4 lg:mx-0 lg:px-0">
-            {["All", "Academic", "Residential", "Support"].map((cat) => (
+      {/* Filter & Search Bar */}
+      <section className="sticky top-20 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 py-4">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-4 justify-between items-center">
+          <div className="flex gap-2 overflow-x-auto no-scrollbar w-full lg:w-auto">
+            {["All", "Academic", "Sports", "Admin", "Residential"].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all shrink-0 ${
-                  filter === cat
-                    ? "bg-primary text-white shadow-lg shadow-primary/30"
-                    : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                className={`px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all shrink-0 ${
+                  filter === cat ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-500 hover:bg-slate-200"
                 }`}
               >
                 {cat}
               </button>
             ))}
           </div>
-
-          {/* Responsive Search Bar */}
           <div className="relative w-full lg:w-80">
-            <Search
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"
-              size={18}
-            />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
             <input
               type="text"
-              placeholder="Search staff or subject..."
-              className="w-full pl-12 pr-6 py-3 bg-slate-100 border-none rounded-2xl text-sm focus:ring-2 focus:ring-primary/20 transition-all outline-none text-slate-900 placeholder:text-slate-400"
+              placeholder="Search by name or role..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-12 pr-6 py-3 bg-slate-100 rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary/20"
             />
           </div>
         </div>
       </section>
 
-      {/* Staff Directory Grid */}
-      <section className="py-20 max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Staff Grid */}
+      <section className="py-16 max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredStaff.map((staff, i) => (
-            <div
-              key={i}
-              className="group bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500"
-            >
-              {/* Photo Placeholder */}
-              <div className="aspect-[4/5] bg-slate-100 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-slate-300 font-black uppercase text-xs tracking-widest">
-                  [Staff Photo]
+            <div key={i} className="group bg-slate-50 p-8 rounded-[2.5rem] border border-transparent hover:border-slate-200 hover:bg-white transition-all duration-300">
+              <div className="flex justify-between items-start mb-6">
+                <div className="h-12 w-12 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm">
+                  <Users size={24} />
                 </div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter text-slate-900">
-                    {staff.department}
-                  </span>
-                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white rounded-full border border-slate-100 text-slate-400">
+                  {staff.department}
+                </span>
               </div>
-
-              {/* Details */}
-              <div className="p-8">
-                <h3 className="text-2xl font-black text-slate-900 leading-tight mb-1">
-                  {staff.name}
-                </h3>
-                <p className="text-primary font-bold text-xs uppercase tracking-widest mb-6">
-                  {staff.role}
-                </p>
-
-                <div className="space-y-3 border-t border-slate-50 pt-6">
-                  <div className="flex items-start gap-3 text-sm">
-                    <GraduationCap size={16} className="text-slate-400 mt-1" />
-                    <span className="text-slate-600">
-                      <strong>Edu:</strong> {staff.qualification}
-                    </span>
-                  </div>
-                  <div className="flex items-start gap-3 text-sm">
-                    <Award size={16} className="text-slate-400 mt-1" />
-                    <span className="text-slate-600">
-                      <strong>Exp:</strong> {staff.experience}
-                    </span>
-                  </div>
+              
+              <h3 className="text-2xl font-black text-slate-900 mb-1 group-hover:text-primary transition-colors">{staff.name}</h3>
+              <p className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-6">{staff.role}</p>
+              
+              <div className="space-y-3 pt-6 border-t border-slate-200/50">
+                <div className="flex gap-3 items-start">
+                  <GraduationCap size={16} className="text-slate-400 mt-1 shrink-0" />
+                  <span className="text-xs text-slate-600 leading-relaxed"><strong>Edu:</strong> {staff.qualification}</span>
                 </div>
-
-                <div className="mt-8 flex gap-2">
-                  <button className="flex-1 bg-slate-900 text-white py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center justify-center gap-2">
-                    <Mail size={14} /> Contact
-                  </button>
+                <div className="flex gap-3 items-center">
+                  <Award size={16} className="text-slate-400 shrink-0" />
+                  <span className="text-xs text-slate-600"><strong>Exp:</strong> {staff.experience}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </section>
 
-      {/* Recruitment CTA */}
-      <section className="pb-24 max-w-7xl mx-auto px-6">
-        <div className="bg-slate-50 rounded-[3rem] p-12 text-center border border-slate-100">
-          <h3 className="text-3xl font-black uppercase mb-4">
-            Join our Faculty
-          </h3>
-          <p className="text-slate-500 max-w-xl mx-auto mb-8">
-            We are always looking for passionate educators and mentors to join
-            our residential campus in Shirpur.
-          </p>
-          <button className="bg-primary text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform">
-            Apply Now
-          </button>
-        </div>
+        {filteredStaff.length === 0 && (
+          <div className="text-center py-20">
+            <p className="text-slate-400 font-bold uppercase tracking-widest">No staff members found matching your criteria.</p>
+          </div>
+        )}
       </section>
     </main>
   );
