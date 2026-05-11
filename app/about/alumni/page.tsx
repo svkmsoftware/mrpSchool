@@ -18,7 +18,7 @@ const alumniData = [
     name: "Mihir Sanghavi",
     batch: "Batch 2021",
     title: "Higher Education Aspirant",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop",
+    image: "/images/alumni/mihir_sanghavi.png",
     heading: "Memories of MRPS",
     content: "My schooling days at MRPS were truly some of the most beautiful and memorable days of my life. Even today, when life has moved forward, I often find myself missing those simple and joyful moments. MRPS was not only about academics but also about the culture, friendships, supportive teachers, sports, and unforgettable hostel life. Those experiences taught me many good values and habits that continue to guide me today. In my opinion, everyone should experience hostel life at least once. MRPS is truly the best residential school, as it not only educates you but also shapes your character and helps you grow into the best version of yourself.",
     accent: "bg-purple-600",
@@ -29,7 +29,7 @@ const alumniData = [
     name: "Deepak Goyal",
     batch: "Batch 2018",
     title: "IIT Madras Alumni",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
+    image: "/images/alumni/Deepak_Goyal.png",
     heading: "The Journey That Shaped Me",
     content: "Joining Mukesh R. Patel Residential CBSE School at the age of eleven was the beginning of a journey that shaped my character and independence. Living away from home was challenging at first, but the disciplined environment, constant encouragement from dedicated teachers, and the support of friends helped me grow stronger with each passing year. I feel truly fortunate to have studied in such a school with world-class infrastructure and excellent facilities that provided the perfect environment for learning and growth. The school not only guided me academically but also instilled confidence and leadership. I remain deeply grateful for the care, guidance, and values imparted here, which transformed a hesitant child into a confident individual. Mukesh R. Patel School will always remain a place that built the foundation of who I am today.",
     accent: "bg-blue-600",
@@ -40,7 +40,7 @@ const alumniData = [
     name: "Pinkal Agarwal",
     batch: "Batch 2018",
     title: "Professional Excellence",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&fit=crop",
+    image: "/images/alumni/Pinkal_Agarwal.png",
     heading: "Four Years That Shaped Me – MRPS",
     content: "MRPS is not just a school; it is a beautiful memory that will always live in my heart. The four years I spent here were filled with learning, friendship, laughter, and unforgettable experiences. From hostel life and early morning routines to the joy of sports, classes, and countless moments with friends, every day added something special to who I am today. The guidance of our teachers, the discipline of the school, and the strong bonds of friendship shaped my personality and gave me confidence to face life ahead. Even though time has moved on and everyone is busy with their own journeys, the memories of MRPS remain precious. MRPS will always remain the place where my journey began and memories for a lifetime were made.",
     accent: "bg-orange-600",
@@ -51,7 +51,7 @@ const alumniData = [
     name: "Pratiksha Somani",
     batch: "Batch 2019",
     title: "Chartered Accountant (Final Stage)",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&h=200&fit=crop",
+    image: "/images/alumni/Pratiksha_Somani.png",
     heading: "A Home Away From Home",
     content: "There are places that do not just educate you; they shape you and quietly become a part of who you are. For me, that place will always be MRPS. Today, I am proud to share that I am pursuing the Chartered Accountancy course and have reached its Final Stage. The discipline, determination, and academic foundation I received at MRPS have guided me throughout this journey. Beyond academics, what truly made the experience special was hostel life. Living away from home, surrounded by friends and caring staff who became like family, we were never treated merely as students; we were cared for like their own children. I will always remain grateful and proud to call myself an MRPian. The bonds I formed here will always remain my extended family.",
     accent: "bg-emerald-600",
@@ -171,7 +171,7 @@ export default function PerfectAlumniPage() {
             <div className="hidden md:block">
               <div className="aspect-[16/10] bg-gradient-to-br from-primary to-blue-600 rounded-2xl rotate-3 relative overflow-hidden shadow-2xl">
                  <img 
-                   src="https://images.unsplash.com/photo-1523050335392-938511794244?q=80&w=800&auto=format&fit=crop" 
+                   src="/images/alumni/infra.jpeg" 
                    className="w-full h-full object-cover opacity-40 mix-blend-overlay" 
                    alt="Campus"
                  />

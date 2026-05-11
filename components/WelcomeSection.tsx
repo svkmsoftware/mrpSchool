@@ -31,10 +31,10 @@ export default function WelcomeSection() {
           
           <div className="lg:w-1/2 grid grid-cols-2 gap-4">
             <div className="h-64 bg-slate-100 rounded-3xl overflow-hidden shadow-xl translate-y-8">
-               <img src="/images/infrastructure/classroom.jpeg" className="w-full h-full object-cover" alt="Classroom" />
+               <img src="/images/student_1.jpeg" className="w-full h-full object-cover" alt="Classroom" />
             </div>
             <div className="h-64 bg-slate-100 rounded-3xl overflow-hidden shadow-xl">
-               <img src="/images/infrastructure/swimmingpool_sports.jpeg" className="w-full h-full object-cover" alt="Sports" />
+               <img src="/images/student_2.jpeg" className="w-full h-full object-cover" alt="Sports" />
             </div>
           </div>
         </div>

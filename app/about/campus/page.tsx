@@ -65,7 +65,7 @@ export default function CampusPage() {
       </section>
 
       <section className="pb-24 px-6 max-w-7xl mx-auto">
-        <div className="aspect-[21/9] rounded-[4rem] border-4 border-dashed border-slate-200 overflow-hidden bg-slate-100">
+        <div className="aspect-[17/9] rounded-[4rem] border-4 border-dashed border-slate-200 overflow-hidden bg-slate-100">
           <img
             src="/images/mrpSchool_frontGate.png"
             alt="MRP School Front Gate"

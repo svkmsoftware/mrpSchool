@@ -155,9 +155,9 @@ export default function AboutMRPSchool() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
+            <div className="aspect-[2/2] rounded-[3rem] overflow-hidden shadow-2xl">
               <img
-                src="/images/mrpSchool_classroom_photo.jpeg"
+                src="/images/about_mrps.jpeg"
                 alt="MRPS Campus"
                 className="w-full h-full object-cover"
               />
